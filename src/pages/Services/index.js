@@ -10,7 +10,7 @@ const Services = (props) => {
 
 const mapstatetoprops = (state) => {
   return {
-    allb: state.trackuserb
+    allb: state.TrackUserB
   };
 };
 export default connect(mapstatetoprops)(Services);

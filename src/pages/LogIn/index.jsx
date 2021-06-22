@@ -2,9 +2,7 @@ import React from "react";
 import LoginForm from "./LoginForm.jsx";
 import { connect } from "react-redux";
 const LogIn = (props) => {
-  
   return (
-  
     <div className="page">
       <h1>Log In Page</h1>
       <LoginForm />
@@ -14,7 +12,7 @@ const LogIn = (props) => {
 
 const mapstatetoprops = (state) => {
   return {
-    allb: state.trackuserb,
+    allb: state.TrackUserB
   };
 };
 export default connect(mapstatetoprops)(LogIn);

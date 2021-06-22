@@ -11,9 +11,11 @@ toast.configure();
 
 function LoginForm(props) {
   const history = useHistory();
+
   const redirect = (actor_api_redirect) => {
     history.replace("/");
     actor_api_redirect = "m";
+    props.allb.all = 1;
     if (actor_api_redirect === "b") {
       props.set_who_logged(1);
       props.allb.all = 1;
@@ -30,6 +32,7 @@ function LoginForm(props) {
     } else if (actor_api_redirect === "m") {
       props.set_who_logged(4);
       props.allb.all = 4;
+      console.log(props.allb.all, "inside m");
       history.push(`/manufacturerhome/m/home`);
     }
   };
@@ -131,7 +134,7 @@ function LoginForm(props) {
 
 const mapstatetoprops = (state) => {
   return {
-    allb: state.trackuserb
+    allb: state.TrackUserB
   };
 };
 const mapdispatchtoprops = (dispatch) => {
