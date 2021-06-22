@@ -44,8 +44,7 @@ function App(props) {
         <Route path="/about" component={About} />
         <Route path="/services" component={Services} />
         <Route path="/sign-up" component={SignUp} />
-        <Route path="/login" component={LogIn} />
-
+        <Route path="/login" component={LogIn} /> */}
         <Route
           path="/register/manufacturer"
           component={SignUpManufacturer}

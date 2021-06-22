@@ -15,17 +15,17 @@ const Navbar = (props) => {
         </NavLink>
         <Bars />
         <NavMenu>
-          <NavLink to="/about" activeStyle>
+          <NavLink to="/about" activeStyle={{ color: "pink" }}>
             About
           </NavLink>
-          <NavLink to="/services" activeStyle>
+          <NavLink to="/services" activeStyle={{ color: "pink" }}>
             Services
           </NavLink>
 
-          <NavLink to="/sign-up" activeStyle>
+          <NavLink to="/sign-up" activeStyle={{ color: "pink" }}>
             Sign Up
           </NavLink>
-          <NavLink to="/Sign-Up-Forms" activeStyle />
+          <NavLink to="/Sign-Up-Forms" activeStyle={{ color: "pink" }} />
 
           {/* Change from NavbarOne */}
           <NavBtnLink to="/login">Log In</NavBtnLink>

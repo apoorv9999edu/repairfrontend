@@ -10,7 +10,7 @@ const About = (props) => {
 };
 const mapstatetoprops = (state) => {
   return {
-    allb: state.trackuserb
+    allb: state.TrackUserB
   };
 };
 export default connect(mapstatetoprops)(About);

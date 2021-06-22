@@ -28,4 +28,10 @@ const mapstatetoprops = (state) => {
     allb: state.trackuserb
   };
 };
-export default connect(mapstatetoprops)(SignUpManufacturer);
+const mapdispatchtoaction = () => {
+  return {};
+};
+export default connect(
+  mapstatetoprops,
+  mapdispatchtoaction
+)(SignUpManufacturer);
