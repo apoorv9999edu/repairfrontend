@@ -12,7 +12,7 @@ const SignUp = (props) => {
 
 const mapstatetoprops = (state) => {
   return {
-    allb: state.TrackUserB
+    allb: state.trackuserb
   };
 };
 export default connect(mapstatetoprops)(SignUp);

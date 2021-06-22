@@ -1,11 +1,10 @@
 import React from "react";
-import Actor from "./components/Actor.jsx";
-import { connect } from "react-redux";
 
-const SignUp = (props) => {
+import { connect } from "react-redux";
+const Home = (props) => {
   return (
     <div className="page">
-      <Actor />
+      <h1>Home Page</h1>
     </div>
   );
 };
@@ -15,4 +14,4 @@ const mapstatetoprops = (state) => {
     allb: state.TrackUserB
   };
 };
-export default connect(mapstatetoprops)(SignUp);
+export default connect(mapstatetoprops)(Home);

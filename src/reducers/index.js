@@ -1,5 +1,5 @@
 import { combineReducers } from "redux";
-import trackuserb from "./userB";
+import TrackUserB from "./UserB";
 
-const rootReducer = combineReducers({ trackuserb });
+const rootReducer = combineReducers({ TrackUserB });
 export default rootReducer;

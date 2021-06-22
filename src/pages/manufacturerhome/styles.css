@@ -5,9 +5,7 @@ body {
   width: 100vw;
   height: 100vh;
   padding: 0;
-  margin: 0;
 }
-
 
 .page {
   width: 100%;
@@ -41,7 +39,9 @@ body {
   padding: 0 12px;
   text-align: left;
 }
-
+.sidebar .sidebar-position a {
+  text-decoration: none;
+}
 .sidebar .sidebar-position:hover {
   background-color: #3f5159;
   border-right: 5px #e84a5f solid;
@@ -66,10 +66,13 @@ body {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  display: none;
+  margin-top: -25px;
+  margin-left: 25px;
 }
 
 .sidebar--open {
-  width: 250px;
+  width: 258px;
   transition: width 0.3s ease;
 }
 
@@ -89,5 +92,6 @@ body {
   padding: 0 12px 15px;
 }
 
-sc-bdnxRM hDKcKU
-{display: none}
+sc-bdnxRM hDKcKU {
+  display: none;
+}

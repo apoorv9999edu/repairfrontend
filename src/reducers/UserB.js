@@ -1,4 +1,4 @@
-const trackuserb = (state = { status: false, data: "", all: 0 }, action) => {
+const TrackUserB = (state = { status: false, data: "", all: 0 }, action) => {
   switch (action.type) {
     case "BLOGIN":
       state = { ...state, status: true, data: action.payload };
@@ -19,4 +19,4 @@ const trackuserb = (state = { status: false, data: "", all: 0 }, action) => {
   return state;
 };
 
-export default trackuserb;
+export default TrackUserB;
